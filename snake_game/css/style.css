@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+
+    background: url("../bg.jpg");
+    background-repeat: repeat;
+    background-size: auto;
+    min-height: 100vh;
+    background-size: 100vw, 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#board {
+    background: linear-gradient(green, yellow);
+    width: 90vmin;
+    height: 90vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head {
+    background: linear-gradient(rgb(226, 80, 80), #ffff53);
+    border: 2px solid rgb(54, 5, 54);
+    border-radius: 1vmin;
+    transform: scale(1.02);
+}
+
+.snake {
+    background-color: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food {
+    background: linear-gradient(red, purple);
+    border: .25vmin solid black;
+    border-radius: 8px;
+}
+
+#scoreBox {
+    position: absolute;
+    top: 75px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+}
+
+#hiscoreBox {
+    position: absolute;
+    top: 150px;
+    right: 150px;
+    font-size: 39px;
+    font-weight: bold;
+}
